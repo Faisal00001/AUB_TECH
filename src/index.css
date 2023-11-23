@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+@layer base {
+  :root {
+    --color-text-navText: #CBD5E0;
+    --color-text-navTextHover: #EF4444;
+    --color-text-subHeading: #718096;
+    --color-text-bannerIcon: #EC4899;
+    --color-button-navHover: #f9004d;
+    --color-fillBannerTitleStart: #DC2626;
+    --color-fillBannerTitleEnd: #D946EF;
+    --color-text-muted: red;
+  }
+}
