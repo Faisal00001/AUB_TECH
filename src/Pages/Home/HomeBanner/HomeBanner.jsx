@@ -2,11 +2,10 @@
 import { BiBriefcase } from "react-icons/bi";
 import { IoCubeOutline } from "react-icons/io5";
 import { LuMouse } from "react-icons/lu";
-import mountain from "../../../assets/images/navImages/mountain.jpg";
 const HomeBanner = () => {
     return (
         <div>
-            <div className="relative">
+            <div>
                 <div className="hero min-h-screen " style={{ backgroundImage: 'url(https://i.ibb.co/LrdLDmj/abstract-triangles-background.jpgg)' }}>
                     <div className="hero-overlay bg-opacity-40 pb-[170px]">
                         <div className="pt-[230px] pl-[50px]">
@@ -17,19 +16,19 @@ const HomeBanner = () => {
                             <div>
                                 <BiBriefcase className="text-skin-bannerIcon text-7xl"></BiBriefcase>
                                 <h3 className="text-skin-navLinkText text-xl md:text-2xl">Business Stratagy</h3>
-                                <p className="text-skin-subHeading text-lg md:text-xl">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                                <p className="text-skin-navSubHeading  text-lg md:text-xl">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
                             </div>
                             <div>
                                 <IoCubeOutline className="text-skin-bannerIcon text-7xl"></IoCubeOutline>
                                 <h3 className="text-skin-navLinkText text-xl md:text-2xl">Website Development</h3>
-                                <p className="text-skin-subHeading text-lg md:text-xl">
+                                <p className="text-skin-navSubHeading  text-lg md:text-xl">
                                     There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
                                 </p>
                             </div>
                             <div>
                                 <LuMouse className="text-skin-bannerIcon text-7xl"></LuMouse>
                                 <h3 className="text-skin-navLinkText text-xl md:text-2xl">Marketing & Reporting</h3>
-                                <p className="text-skin-subHeading text-lg md:text-xl">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                                <p className="text-skin-navSubHeading text-lg md:text-xl">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
                             </div>
                         </div>
 
@@ -41,9 +40,9 @@ const HomeBanner = () => {
                     </div>
 
                 </div>
-                <div className="left-[3%] top-[90%] absolute">
-                    <img className="w-[60%] h-[600px] rounded-lg" src={mountain} alt="" />
-                </div>
+                {/* <div className="left-[3%] top-[90%] absolute hidden lg:block">
+                    <img className="w-[60%] h-[600px] rounded-lg" src={mountain} alt="Mountain" />
+                </div> */}
             </div>
 
 

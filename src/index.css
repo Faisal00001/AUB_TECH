@@ -12,7 +12,9 @@ body {
   :root {
     --color-text-navText: #CBD5E0;
     --color-text-navTextHover: #EF4444;
-    --color-text-subHeading: #718096;
+    --color-text-navSubHeading: #718096;
+    --color-text-Heading: #1f1f25;
+    --color-text-subHeading: #717173;
     --color-text-bannerIcon: #EC4899;
     --color-button-navHover: #f9004d;
     --color-fillBannerTitleStart: #DC2626;

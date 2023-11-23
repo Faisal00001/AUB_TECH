@@ -11,6 +11,8 @@ export default {
           navLinkText:'var(--color-text-navText)',
           navLinkTextHover:'var(--color-text-navTextHover)',
           bannerIcon:'var(--color-text-bannerIcon)',
+          Heading:'var(--color-text-Heading)',
+          navSubHeading:'var(--color-text-navSubHeading)',
           subHeading:'var(--color-text-subHeading)',
         }
       },
