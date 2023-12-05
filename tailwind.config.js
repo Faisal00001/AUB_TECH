@@ -27,7 +27,8 @@ export default {
       backgroundColor:{
         skin:{
             navButtonHover:'var(--color-button-navHover)',
-            fillServicesBg:'var(--color-fillServicesBg)'
+            fillServicesBg:'var(--color-fillServicesBg)',
+            contactUsCardBg:'var(--color-fillContactUsCardBg)'
 
         }
       },

@@ -1,6 +1,6 @@
 import { FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../../assets/images/logo/logo.jpg";
 const Navbar = () => {
     const showBar = () => {
@@ -42,7 +42,14 @@ const Navbar = () => {
                                     </li>
                                     <li className="w-full  pb-5">
                                         <Link className="pl-10 font-semibold">
-                                            Service
+                                            <NavLink
+                                                to="/service"
+                                                className={({ isActive, isPending }) =>
+                                                    isPending ? "pending" : isActive ? "active" : ""
+                                                }
+                                            >
+                                                Service
+                                            </NavLink>
                                         </Link>
                                     </li>
                                     <li className="w-full  pb-5">
@@ -52,7 +59,14 @@ const Navbar = () => {
                                     </li>
                                     <li className="w-full  pb-5">
                                         <Link className="pl-10 font-semibold">
-                                            Contact
+                                            <NavLink
+                                                to="/contactUs"
+                                                className={({ isActive, isPending }) =>
+                                                    isPending ? "pending" : isActive ? "active" : ""
+                                                }
+                                            >
+                                                Contact
+                                            </NavLink>
                                         </Link>
                                     </li>
 
@@ -68,7 +82,17 @@ const Navbar = () => {
                                         <div className="dropdown dropdown-hover">
                                             <label tabIndex={0} className="text-skin-navLinkText font-medium hover:text-skin-navLinkTextHover">Service</label>
                                             <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 px-2 shadow bg-base-100 space-y-4 rounded-lg py-5 w-60">
-                                                <Link className="font-medium hover:text-skin-navLinkTextHover px-5 py-2 hover:bg-red-100 hover:rounded-sm">Service</Link>
+                                                <Link className="font-medium hover:text-skin-navLinkTextHover px-5 py-2 hover:bg-red-100 hover:rounded-sm">
+                                                    <NavLink
+                                                        to="/service"
+                                                        className={({ isActive, isPending }) =>
+                                                            isPending ? "pending" : isActive ? "active" : ""
+                                                        }
+                                                    >
+                                                        Service
+                                                    </NavLink>
+                                                </Link>
+
                                                 <Link className="font-medium hover:text-skin-navLinkTextHover px-5 py-2 hover:bg-red-100 hover:rounded-sm">Service Details</Link>
                                             </ul>
                                         </div>
@@ -81,7 +105,14 @@ const Navbar = () => {
                                     </li>
                                     <li className="hidden lg:block">
                                         <Link className="text-skin-navLinkText font-medium hover:text-skin-navLinkTextHover">
-                                            Contact
+                                            <NavLink
+                                                to="/contactUs"
+                                                className={({ isActive, isPending }) =>
+                                                    isPending ? "pending" : isActive ? "active" : ""
+                                                }
+                                            >
+                                                Contact
+                                            </NavLink>
                                         </Link>
                                     </li>
                                     <li className="hidden md:block">
