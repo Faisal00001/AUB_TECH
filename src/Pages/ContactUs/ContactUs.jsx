@@ -11,8 +11,8 @@ const ContactUs = () => {
                 <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 pt-36 px-8 md:px-14">
                     <div className="relative cursor-pointer bg-skin-contactUsCardBg py-14 px-10 rounded-xl border-2 group border-gray-200">
                         <h3 className="text-lg font-bold">Contact With Phone Number</h3>
-                        <p className="mt-5 text-skin-subHeading mb-1">+057 254 365 456</p>
-                        <p className="text-skin-subHeading">+856 325 652 984</p>
+                        <p className="mt-5 text-skin-subHeading mb-1 hover:text-[#f9004d]">+057 254 365 456</p>
+                        <p className="text-skin-subHeading hover:text-[#f9004d]">+856 325 652 984</p>
                         <div className="absolute transition duration-300 group-hover:delay-150 group-hover:bg-skin-navButtonHover flex justify-center items-center -translate-y-1/2 top-0 w-20 h-20 border-2 border-gray-200 rounded-full bg-skin-contactUsCardBg">
                             <FaHeadphones className="text-skin-count font-bold duration-300 transition group-hover:delay-150 group-hover:text-skin-textWhite text-3xl"></FaHeadphones>
                         </div>
@@ -21,8 +21,8 @@ const ContactUs = () => {
                     <div>
                         <div className="relative cursor-pointer group bg-skin-contactUsCardBg py-14 px-10 rounded-xl border-2 border-gray-200">
                             <h3 className="text-lg font-bold">Email Address</h3>
-                            <p className="mt-5 text-skin-subHeading mb-1">admin@gmail.com</p>
-                            <p className="text-skin-subHeading">example@gmail.com</p>
+                            <p className="mt-5 text-skin-subHeading mb-1 hover:text-[#f9004d]">admin@gmail.com</p>
+                            <p className="text-skin-subHeading hover:text-[#f9004d]">example@gmail.com</p>
                             <div className="absolute transition duration-300 group-hover:delay-150 group-hover:bg-skin-navButtonHover flex justify-center items-center -translate-y-1/2 top-0 w-20 h-20 border-2 border-gray-200 rounded-full bg-skin-contactUsCardBg">
                                 <MdOutlineMailOutline className="text-skin-count font-bold duration-300 transition group-hover:delay-150 group-hover:text-skin-textWhite text-3xl"></MdOutlineMailOutline>
                             </div>

@@ -54,6 +54,18 @@ const Navbar = () => {
                                     </li>
                                     <li className="w-full  pb-5">
                                         <Link className="pl-10 font-semibold">
+                                            <NavLink
+                                                to="/serviceDetails"
+                                                className={({ isActive, isPending }) =>
+                                                    isPending ? "pending" : isActive ? "active" : ""
+                                                }
+                                            >
+                                                Service Details
+                                            </NavLink>
+                                        </Link>
+                                    </li>
+                                    <li className="w-full  pb-5">
+                                        <Link className="pl-10 font-semibold">
                                             About
                                         </Link>
                                     </li>
@@ -93,7 +105,16 @@ const Navbar = () => {
                                                     </NavLink>
                                                 </Link>
 
-                                                <Link className="font-medium hover:text-skin-navLinkTextHover px-5 py-2 hover:bg-red-100 hover:rounded-sm">Service Details</Link>
+                                                <Link className="font-medium hover:text-skin-navLinkTextHover px-5 py-2 hover:bg-red-100 hover:rounded-sm">
+                                                    <NavLink
+                                                        to="/serviceDetails"
+                                                        className={({ isActive, isPending }) =>
+                                                            isPending ? "pending" : isActive ? "active" : ""
+                                                        }
+                                                    >
+                                                        Service Details
+                                                    </NavLink>
+                                                </Link>
                                             </ul>
                                         </div>
 
