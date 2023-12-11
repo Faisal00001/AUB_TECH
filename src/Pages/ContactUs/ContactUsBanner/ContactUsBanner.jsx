@@ -1,9 +1,9 @@
-import ContactUs from "../../../assets/images/ContactUsBanner/contactUsBanner2.jpg";
+import "./ContactUsBanner.css";
 const ContactUsBanner = () => {
     return (
         <div>
-            <div className="hero min-h-[90vh]" style={{ backgroundImage: `url(${ContactUs})` }}>
-                <div className="hero-overlay bg-opacity-60">
+            <div className="ContactBannerImage">
+                <div>
                     <div className="container mx-auto">
                         <div>
                             <div className="pt-[230px] pb-[133px]">

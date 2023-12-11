@@ -1,6 +1,6 @@
 import HomeBannerImg from "../../../assets/images/HomeBanner/HomeBanner.jpg";
-import "./ServiceBanner.css";
-const ServiceBanner = () => {
+import "./AboutUsBanner.css";
+const AboutUsBanner = () => {
     return (
         <div>
             <div>
@@ -9,8 +9,8 @@ const ServiceBanner = () => {
                         <div className="container mx-auto">
                             <div>
                                 <div className="pt-[230px] pb-[133px]">
-                                    <h3 className="bannerTitleColor text-center   text-5xl font-bold mb-5">Service</h3>
-                                    <p className="text-center text-skin-textWhite">Home <span className="text-skin-navLinkText">/</span> <span className="bannerTitleColor">Service</span></p>
+                                    <h3 className="bannerTitleColor text-center   text-5xl font-bold mb-5">About</h3>
+                                    <p className="text-center text-skin-textWhite">Home <span className="text-skin-navLinkText">/</span> <span className="bannerTitleColor">About</span></p>
                                 </div>
                             </div>
                         </div>
@@ -25,4 +25,4 @@ const ServiceBanner = () => {
     );
 };
 
-export default ServiceBanner;
+export default AboutUsBanner;

@@ -9,7 +9,7 @@ const HomeBanner = () => {
             <div>
                 {/* <img src="" alt="" /> */}
                 <div className="hero min-h-screen " style={{ backgroundImage: `url(${HomeBannerImg})` }}>
-                    <div className="hero-overlay bg-opacity-40">
+                    <div>
                         <div className="container mx-auto mb-[170px]">
                             <div className="pt-[230px] pl-[50px]">
                                 <h1 className="bg-gradient-to-r from-skin-BannerTitleStart to-skin-BannerTitleEnd text-transparent bg-clip-text mb-5 text-4xl md:text-6xl lg:text-8xl font-bold">A DIGITAL <br />

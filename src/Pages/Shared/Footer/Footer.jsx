@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="block lg:hidden">
                     <div>
                         <div className="hero" style={{ backgroundImage: `url(${contactUs})` }}>
-                            <div className="hero-overlay bg-opacity-40">
+                            <div className="w-full">
                                 <div>
                                     <div className="py-14 ">
                                         <div className="pl-8 md:pl-16">
@@ -28,13 +28,13 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="hero  lg:h-[470px] relative" style={{ backgroundImage: `url(${footerBannerImg})` }}>
-                    <div className="hero-overlay py-16 lg:py-0  bg-opacity-40">
+                    <div className="py-16 lg:py-0 w-full">
                         <div className="">
                             <div className="flex">
                                 {/* Contact us */}
                                 <div className="w-[51%] hidden lg:block -mt-[90px] ">
                                     <div className="hero rounded-tr-md h-[560px]" style={{ backgroundImage: `url(${contactUs})` }}>
-                                        <div className="hero-overlay  bg-opacity-20 rounded-tr-md">
+                                        <div className="w-full pb-20 rounded-tr-md">
                                             <div className="container mx-auto">
                                                 <div className="pl-28 pt-28">
                                                     <p className="text-skin-textWhite text-xl mb-5 pl-1">READY TO DO THIS</p>

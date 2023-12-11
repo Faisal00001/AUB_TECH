@@ -66,7 +66,14 @@ const Navbar = () => {
                                     </li>
                                     <li className="w-full  pb-5">
                                         <Link className="pl-10 font-semibold">
-                                            About
+                                            <NavLink
+                                                to="/aboutUs"
+                                                className={({ isActive, isPending }) =>
+                                                    isPending ? "pending" : isActive ? "active" : ""
+                                                }
+                                            >
+                                                About
+                                            </NavLink>
                                         </Link>
                                     </li>
                                     <li className="w-full  pb-5">
@@ -94,9 +101,9 @@ const Navbar = () => {
                                         <div className="dropdown dropdown-hover">
                                             <label tabIndex={0} className="text-skin-navLinkText font-medium hover:text-skin-navLinkTextHover">Service</label>
                                             <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 px-2 shadow bg-base-100 space-y-4 rounded-lg py-5 w-60">
-                                                <Link className="font-medium hover:text-skin-navLinkTextHover px-5 py-2 hover:bg-red-100 hover:rounded-sm">
+                                                <Link to={'/service'} className="font-medium hover:text-skin-navLinkTextHover px-5 py-2 hover:bg-red-100 hover:rounded-sm">
                                                     <NavLink
-                                                        to="/service"
+                                                        to={'/service'}
                                                         className={({ isActive, isPending }) =>
                                                             isPending ? "pending" : isActive ? "active" : ""
                                                         }
@@ -105,9 +112,9 @@ const Navbar = () => {
                                                     </NavLink>
                                                 </Link>
 
-                                                <Link className="font-medium hover:text-skin-navLinkTextHover px-5 py-2 hover:bg-red-100 hover:rounded-sm">
+                                                <Link to={"/serviceDetails"} className="font-medium hover:text-skin-navLinkTextHover px-5 py-2 hover:bg-red-100 hover:rounded-sm">
                                                     <NavLink
-                                                        to="/serviceDetails"
+                                                        to={'/serviceDetails'}
                                                         className={({ isActive, isPending }) =>
                                                             isPending ? "pending" : isActive ? "active" : ""
                                                         }
@@ -121,7 +128,14 @@ const Navbar = () => {
                                     </li>
                                     <li className="hidden lg:block">
                                         <Link className="text-skin-navLinkText font-medium hover:text-skin-navLinkTextHover">
-                                            About
+                                            <NavLink
+                                                to="/aboutUs"
+                                                className={({ isActive, isPending }) =>
+                                                    isPending ? "pending" : isActive ? "active" : ""
+                                                }
+                                            >
+                                                About
+                                            </NavLink>
                                         </Link>
                                     </li>
                                     <li className="hidden lg:block">

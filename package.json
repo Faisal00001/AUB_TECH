@@ -17,9 +17,11 @@
     "react-countup": "^6.5.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
+    "react-player": "^2.13.0",
     "react-router-dom": "^6.19.0",
     "react-scroll-trigger": "^0.6.14",
     "react-tsparticles": "^2.12.2",
+    "react-youtube": "^10.1.0",
     "sort-by": "^1.2.0",
     "swiper": "^11.0.5"
   },

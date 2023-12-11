@@ -1,10 +1,10 @@
-
-import ServiceDetails from "../../../assets/images/ServiceDetails/serviceDetailsBanner.jpg";
+import "./ServiceDetailsBanner.css";
 const ServiceDetailsBanner = () => {
     return (
         <div>
-            <div className="hero min-h-[90vh]" style={{ backgroundImage: `url(${ServiceDetails})` }}>
-                <div className="hero-overlay bg-opacity-70">
+            <div className="ServiceDetailsBanner"
+            >
+                <div>
                     <div className="container mx-auto">
                         <div>
                             <div className="pt-[230px] pb-[133px]">
