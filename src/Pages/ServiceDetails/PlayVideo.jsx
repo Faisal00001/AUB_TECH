@@ -26,7 +26,7 @@ const PlayVideo = ({ closeVideo }) => {
                     </div>
 
                     {/* <iframe className='w-[800px] h-[450px]' src="https://www.youtube.com/embed/DF3XjEhJ40Y?si=YPpwMMUtDVmfSZY5" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
-                    <button className='absolute top-0 right-0 -translate-x-6 -translate-y-8 md:-translate-y-10 md:-translate-x-3 lg:translate-x-4 lg:-translate-y-3' onClick={closeVideo}>
+                    <button className='absolute top-0 right-0 -translate-x-6 -translate-y-8 md:-translate-y-10 md:-translate-x-3 lg:translate-x-4 lg:-translate-y-3 customCursor' onClick={closeVideo}>
                         <IoCloseOutline className='text-4xl md:text-5xl text-white'></IoCloseOutline>
                     </button>
                 </div>

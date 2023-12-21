@@ -17,26 +17,26 @@ const Services = () => {
                                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.
                             </p>
                             <li className="list-none">
-                                <Link className="link link-underline no-underline link-underline-black text-skin-Heading hover:text-skin-linkHover "> Request Custom Service </Link>
+                                <Link className="link link-underline no-underline link-underline-black text-skin-Heading hover:text-skin-linkHover customCursor"> Request Custom Service </Link>
                             </li>
                         </div>
                         <div className="w-full lg:w-[67%] gap-2 grid grid-cols-1 md:grid-cols-2">
-                            <div className="space-y-4 hover:bg-gradient-to-r from-[#f61b10] to-[#ef0963] group  p-8 w-[90%] hover:rounded-lg transition duration-700 ease-in-out delay-150 hover:-translate-y-3 cursor-pointer">
+                            <div className="space-y-4 hover:bg-gradient-to-r from-[#f61b10] to-[#ef0963] group  p-8 w-[90%] hover:rounded-lg transition duration-700 ease-in-out delay-150 hover:-translate-y-3 customCursor">
                                 <FaBusinessTime className="text-skin-linkHover text-6xl group-hover:text-white"></FaBusinessTime>
                                 <h3 className="text-skin-Heading text-lg group-hover:text-white">Business Stratagy</h3>
                                 <p className="text-skin-subHeading group-hover:text-white">I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
                             </div>
-                            <div className="space-y-4 hover:bg-gradient-to-r from-[#f61b10] to-[#ef0963] group  p-8 w-[90%] hover:rounded-lg transition duration-700 ease-in-out delay-150 hover:-translate-y-3 cursor-pointer">
+                            <div className="space-y-4 hover:bg-gradient-to-r from-[#f61b10] to-[#ef0963] group  p-8 w-[90%] hover:rounded-lg transition duration-700 ease-in-out delay-150 hover:-translate-y-3 customCursor">
                                 <SiGamedeveloper className="text-skin-linkHover text-6xl group-hover:text-white"></SiGamedeveloper>
                                 <h3 className="text-skin-Heading text-lg group-hover:text-white">Website Development</h3>
                                 <p className=" text-skin-subHeading group-hover:text-white">I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
                             </div>
-                            <div className="space-y-4 hover:bg-gradient-to-r from-[#f61b10] to-[#ef0963] group  p-8 w-[90%] hover:rounded-lg transition duration-700 ease-in-out delay-150 hover:-translate-y-3 cursor-pointer">
+                            <div className="space-y-4 hover:bg-gradient-to-r from-[#f61b10] to-[#ef0963] group  p-8 w-[90%] hover:rounded-lg transition duration-700 ease-in-out delay-150 hover:-translate-y-3 customCursor">
                                 <TbUserBolt className="text-skin-linkHover text-6xl group-hover:text-white"></TbUserBolt>
                                 <h3 className="text-skin-Heading text-lg group-hover:text-white">Marketing & Reporting</h3>
                                 <p className="text-skin-subHeading group-hover:text-white">I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
                             </div>
-                            <div className="pace-y-4 hover:bg-gradient-to-r from-[#f61b10] to-[#ef0963] group  p-8 w-[90%]  hover:rounded-lg transition duration-700 ease-in-out delay-150 hover:-translate-y-3 cursor-pointer">
+                            <div className="pace-y-4 hover:bg-gradient-to-r from-[#f61b10] to-[#ef0963] group  p-8 w-[90%]  hover:rounded-lg transition duration-700 ease-in-out delay-150 hover:-translate-y-3 customCursor">
                                 <AiOutlineDesktop className="text-skin-linkHover text-6xl group-hover:text-white"></AiOutlineDesktop>
                                 <h3 className="text-skin-Heading text-lg group-hover:text-white">Mobile App Development</h3>
                                 <p className="text-skin-subHeading group-hover:text-white">I throw myself down among the tall grass by the stream as I lie close to the earth.</p>

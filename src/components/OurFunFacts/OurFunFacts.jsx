@@ -73,7 +73,7 @@ const OurFunFacts = () => {
                     <p className='mt-16 text-center'><span className='text-skin-Heading md:text-lg'>AKLIMA</span> <span className='text-skin-subHeading md:text-lg'>- COO, AMERIMAR ENTERPRISES, INC.</span> </p>
                     <div className='md:w-[75%] lg:w-[45%] mx-auto mt-16 px-5'>
                         <div className='flex flex-wrap justify-center gap-5'>
-                            <div className='transition ease-in-out hover:scale-110 cursor-pointer'>
+                            <div className='customCursor transition ease-in-out hover:scale-110'>
                                 <div className="avatar relative">
                                     <div className="w-24 rounded">
                                         <img src="https://i.ibb.co/fvN1Zt9/aatik-tasneem-7om-HUGhhm-Z0-unsplash.jpg" />
@@ -81,49 +81,49 @@ const OurFunFacts = () => {
                                     <span className="top-0 right-0 absolute  w-4 h-4 bg-red-500 border-2 rounded-full transform translate-x-1 -translate-y-1/2"></span>
                                 </div>
                             </div>
-                            <div className='transition ease-in-out hover:scale-110 cursor-pointer'>
+                            <div className='customCursor transition ease-in-out hover:scale-110'>
                                 <div className="avatar">
                                     <div className="w-24 rounded">
                                         <img src="https://i.ibb.co/z519ZSY/austin-distel-7uo-Mmz-Pd2-JA-unsplash.jpg" />
                                     </div>
                                 </div>
                             </div>
-                            <div className='transition ease-in-out hover:scale-110 cursor-pointer'>
+                            <div className='customCursor transition ease-in-out hover:scale-110'>
                                 <div className="avatar">
                                     <div className="w-24 rounded">
                                         <img src="https://i.ibb.co/r5CZQhX/christian-buehner-DIt-Ylc26z-VI-unsplash.jpg" />
                                     </div>
                                 </div>
                             </div>
-                            <div className='transition ease-in-out hover:scale-110 cursor-pointer'>
+                            <div className='customCursor transition ease-in-out hover:scale-110'>
                                 <div className="avatar">
                                     <div className="w-24 rounded">
                                         <img src="https://i.ibb.co/VBr8Jpw/elizeu-dias-2-EGNqazb-AMk-unsplash.jpg" />
                                     </div>
                                 </div>
                             </div>
-                            <div className='transition ease-in-out hover:scale-110 cursor-pointer'>
+                            <div className='customCursor transition ease-in-out hover:scale-110'>
                                 <div className="avatar">
                                     <div className="w-24 rounded">
                                         <img src="https://i.ibb.co/8NC1wq1/irene-strong-23u8-P6g-Dr-KM-unsplash.jpg" />
                                     </div>
                                 </div>
                             </div>
-                            <div className='transition ease-in-out hover:scale-110 cursor-pointer'>
+                            <div className='customCursor transition ease-in-out hover:scale-110'>
                                 <div className="avatar">
                                     <div className="w-24 rounded">
                                         <img src="https://i.ibb.co/7jBy403/irene-strong-CCf-RNx-Abk-YI-unsplash.jpg" />
                                     </div>
                                 </div>
                             </div>
-                            <div className='transition ease-in-out hover:scale-110 cursor-pointer'>
+                            <div className='customCursor transition ease-in-out hover:scale-110'>
                                 <div className="avatar">
                                     <div className="w-24 rounded">
                                         <img src="https://i.ibb.co/jLBdPNq/irene-strong-FOUPtq-P-m-Y-unsplash.jpg" />
                                     </div>
                                 </div>
                             </div>
-                            <div className='transition ease-in-out hover:scale-110 cursor-pointer'>
+                            <div className='customCursor transition ease-in-out hover:scale-110'>
                                 <div className="avatar">
                                     <div className="w-24 rounded">
                                         <img src="https://i.ibb.co/K6QBQ1B/Asiful-Bijoy.jpg" />

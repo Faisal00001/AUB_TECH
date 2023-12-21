@@ -3,8 +3,27 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 body {
   font-family: 'Poppins', sans-serif;
+  margin: auto;
+  height: 100vh;
+  cursor: url('../src/assets/images/cursor/aubtech.svg'), auto;
+}
+
+/* .cursor {
+  width: 32px;
+  height: 32px;
+  border: 2px solid rgb(240, 70, 169);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+} */
+.customCursor {
+  cursor: url('/../src/assets/images/cursor/aubtech-hover.svg'), auto;
 }
 
 .swiper-pagination-bullet-active {

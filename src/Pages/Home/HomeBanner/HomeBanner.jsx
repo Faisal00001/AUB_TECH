@@ -44,9 +44,7 @@ const HomeBanner = () => {
                     </div>
 
                 </div>
-                {/* <div className="left-[3%] top-[90%] absolute hidden lg:block">
-                    <img className="w-[60%] h-[600px] rounded-lg" src={mountain} alt="Mountain" />
-                </div> */}
+
             </div>
 
 

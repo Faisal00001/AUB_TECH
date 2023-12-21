@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IoIosPlay } from "react-icons/io";
+import PageTitle from "../../components/PageTitle/PageTitle";
 import PlayVideo from "./PlayVideo";
 import ServiceDetailsBanner from "./ServiceBanner/ServiceDetailsBanner";
 
@@ -8,6 +9,7 @@ const ServiceDetails = () => {
     const closeVideo = () => setShowVideo(false)
     return (
         <div>
+            <PageTitle title="AUB TECH - Service Details"></PageTitle>
             <div>
                 <ServiceDetailsBanner></ServiceDetailsBanner>
                 <div>
@@ -32,7 +34,7 @@ const ServiceDetails = () => {
                         <div className="flex flex-col lg:flex-row-reverse gap-7 items-center px-8 md:px-14 lg:pl-6 mt-20 md:mt-24">
                             <div className="relative lg:w-[50%] w-full mb-3 md:mb-10 lg:mb-0">
                                 <img className="rounded-lg h-[450px] md:h-full w-full object-cover lg:h-[750px]" src="https://i.ibb.co/1q2PZ9r/windows-N1-YOSWr-XQJE-unsplash.jpg" alt="Service Details" />
-                                <button className="absolute bg-white w-24 h-24 rounded-full top-[43%] left-[43%]" onClick={() => setShowVideo(true)}>
+                                <button className="absolute bg-white w-24 h-24 rounded-full top-[43%] left-[43%] customCursor" onClick={() => setShowVideo(true)}>
                                     <div className="flex justify-center items-center">
                                         <IoIosPlay className="text-[#f9004d] text-2xl "></IoIosPlay>
                                     </div>
