@@ -1,3 +1,6 @@
+import emailjs from '@emailjs/browser';
+import { useRef } from "react";
+import toast from 'react-hot-toast';
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaHeadphones } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
@@ -5,6 +8,18 @@ import PageTitle from "../../components/PageTitle/PageTitle";
 import Sponsorship from "../../components/Sponsorship/Sponsorship";
 import ContactUsBanner from "./ContactUsBanner/ContactUsBanner";
 const ContactUs = () => {
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('service_d3r2r0h', 'template_70fbwtx', form.current, 'y_zvZgrF4cZ8bnWDW')
+            .then((result) => {
+                console.log(result.text);
+                toast.success("Email Send Successfully")
+                e.target.reset()
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
     return (
         <div>
             <PageTitle title="AUB TECH - Contact"></PageTitle>
@@ -48,13 +63,13 @@ const ContactUs = () => {
                     <div className="lg:flex-1 px-8 md:pl-14 mt-10">
                         <h3 className="text-skin-Heading text-4xl md:text-6xl font-bold">Contact Us.</h3>
                         <p className="text-skin-subHeading leading-7 mt-5 mb-12 md:w-[70%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cupiditate aperiam neque.</p>
-                        <form className="lg:w-[90%] md:pr-14 lg:pl-0">
+                        <form ref={form} onSubmit={sendEmail} className="lg:w-[90%] md:pr-14 lg:pl-0">
                             <div className="mb-5">
-                                <input type="text" className="border-2 border-gray-200 px-4 py-3 w-full focus:border-[#f9004d] focus:outline-none rounded-md text-sm" placeholder="Your Name" />
-                                <input type="email" className="border-2 border-gray-200 mt-5 px-4 py-3 w-full focus:border-[#f9004d] focus:outline-none rounded-md text-sm" placeholder="Your Email" />
-                                <input type="text" className="border-2 border-gray-200 mt-5 px-4 py-3 w-full focus:border-[#f9004d] focus:outline-none rounded-md text-sm" placeholder="Phone Number" />
-                                <input type="text" className="border-2 border-gray-200 mt-5 px-4 py-3 w-full focus:border-[#f9004d] focus:outline-none rounded-md text-sm" placeholder="Subject" />
-                                <textarea name="" id="" rows="4" className="border-2 border-gray-200 mt-5 px-4 py-3 w-full focus:border-[#f9004d] focus:outline-none rounded-md text-sm" placeholder="Your Message"></textarea>
+                                <input type="text" name='user_name' className="border-2 border-gray-200 px-4 py-3 w-full focus:border-[#f9004d] focus:outline-none rounded-md text-sm" placeholder="Your Name" />
+                                <input type="email" name='user_email' className="border-2 border-gray-200 mt-5 px-4 py-3 w-full focus:border-[#f9004d] focus:outline-none rounded-md text-sm" placeholder="Your Email" />
+                                <input type="text" name='user_phoneNumber' className="border-2 border-gray-200 mt-5 px-4 py-3 w-full focus:border-[#f9004d] focus:outline-none rounded-md text-sm" placeholder="Phone Number" />
+                                <input type="text" name='user_subject' className="border-2 border-gray-200 mt-5 px-4 py-3 w-full focus:border-[#f9004d] focus:outline-none rounded-md text-sm" placeholder="Subject" />
+                                <textarea name="message" id="" rows="4" className="border-2 border-gray-200 mt-5 px-4 py-3 w-full focus:border-[#f9004d] focus:outline-none rounded-md text-sm" placeholder="Your Message"></textarea>
                             </div>
                             <button className="transition  ease-in-out delay-150 hover:-translate-y-1 font-light duration-300 text-skin-textWhite hover:text-skin-footerButtonText  border-solid border-2 border-[#f9004d] rounded-lg py-2 md:py-3 md:px-8 px-4 lg:px-12 text-base  lg:text-lg hover:bg-white hover:border-[#f9004d] bg-[#f9004d] customCursor">
                                 Submit Now

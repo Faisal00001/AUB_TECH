@@ -23,7 +23,7 @@ body {
   z-index: 30;
 } */
 .customCursor {
-  cursor: url('/../src/assets/images/cursor/aubtech-hover.svg'), auto;
+  cursor: url('../src/assets/images/cursor/aubtech-hover.svg'), auto;
 }
 
 .swiper-pagination-bullet-active {

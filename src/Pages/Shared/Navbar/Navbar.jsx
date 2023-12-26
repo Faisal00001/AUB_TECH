@@ -2,7 +2,7 @@ import { FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../../assets/images/logo/logo.jpg";
-import "./Navbar.css";
+
 const Navbar = () => {
     const showBar = () => {
         const sidebar = document.querySelector('.sidebar')
@@ -43,7 +43,7 @@ const Navbar = () => {
                                                     isPending ? "pending" : isActive ? "active" : ""
                                                 }
                                             >
-                                                <span className="CustomCursor ">Home</span>
+                                                <span className="customCursor ">Home</span>
                                             </NavLink>
                                         </Link>
                                     </li>
@@ -106,34 +106,34 @@ const Navbar = () => {
                                                     isPending ? " pending" : isActive ? "active" : ""
                                                 }
                                             >
-                                                <span className="CustomCursor" >Home</span>
+                                                <span className="customCursor" >Home</span>
                                             </NavLink>
                                         </Link>
                                     </li>
                                     <li className="hidden lg:block">
 
                                         <div className="dropdown dropdown-hover">
-                                            <label tabIndex={0} className=" text-skin-navLinkText font-medium hover:text-skin-navLinkTextHover CustomCursor">Service</label>
+                                            <label tabIndex={0} className=" text-skin-navLinkText font-medium hover:text-skin-navLinkTextHover customCursor">Service</label>
                                             <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 px-2 shadow bg-base-100 space-y-4 rounded-lg py-5 w-60">
-                                                <Link to={'/service'} className="font-medium hover:text-skin-navLinkTextHover px-5 py-2 hover:bg-red-100 hover:rounded-sm CustomCursor">
+                                                <Link to={'/service'} className="font-medium hover:text-skin-navLinkTextHover px-5 py-2 hover:bg-red-100 hover:rounded-sm customCursor">
                                                     <NavLink
                                                         to={'/service'}
                                                         className={({ isActive, isPending }) =>
                                                             isPending ? "pending" : isActive ? "active" : ""
                                                         }
                                                     >
-                                                        <span className="CustomCursor">Service</span>
+                                                        <span className="customCursor">Service</span>
                                                     </NavLink>
                                                 </Link>
 
-                                                <Link to={"/serviceDetails"} className="font-medium hover:text-skin-navLinkTextHover px-5 py-2 hover:bg-red-100 hover:rounded-sm CustomCursor">
+                                                <Link to={"/serviceDetails"} className="font-medium hover:text-skin-navLinkTextHover px-5 py-2 hover:bg-red-100 hover:rounded-sm customCursor">
                                                     <NavLink
                                                         to={'/serviceDetails'}
                                                         className={({ isActive, isPending }) =>
                                                             isPending ? "pending" : isActive ? "active" : ""
                                                         }
                                                     >
-                                                        <span className="CustomCursor">Service Details</span>
+                                                        <span className="customCursor">Service Details</span>
 
                                                     </NavLink>
                                                 </Link>
@@ -149,7 +149,7 @@ const Navbar = () => {
                                                     isPending ? "pending" : isActive ? "active" : ""
                                                 }
                                             >
-                                                <span className="CustomCursor">About</span>
+                                                <span className="customCursor">About</span>
                                             </NavLink>
                                         </Link>
                                     </li>
@@ -161,7 +161,7 @@ const Navbar = () => {
                                                     isPending ? "pending" : isActive ? "active" : ""
                                                 }
                                             >
-                                                <span className="CustomCursor">Contact</span>
+                                                <span className="customCursor">Contact</span>
                                             </NavLink>
                                         </Link>
                                     </li>

@@ -1,9 +1,18 @@
 
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 import contactUs from "../../../assets/images/ContactUsBanner/contactUsBanner.jpg";
 import footerBannerImg from "../../../assets/images/HomeBanner/HomeBanner.jpg";
 const Footer = () => {
+    const navigate = useNavigate()
+    const handleContact = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'auto'
+        });
+        navigate('/contactUs')
+    }
     return (
         <div>
             <div className="mt-56">
@@ -39,7 +48,7 @@ const Footer = () => {
                                                 <div className="pl-28 pt-28">
                                                     <p className="text-skin-textWhite text-xl mb-5 pl-1">READY TO DO THIS</p>
                                                     <h3 className="text-8xl font-bold text-skin-textWhite">Lets get <br />to work</h3>
-                                                    <button className="transition mt-10 ease-in-out delay-150 hover:-translate-y-1  duration-300 text-skin-navLinkText hover:text-skin-footerButtonText font-medium border-solid border-2 border-slate-200 rounded-lg py-3 px-12 text-xl hover:bg-white hover:border-[#FFFFFF] customCursor">
+                                                    <button onClick={handleContact} className="transition mt-10 ease-in-out delay-150 hover:-translate-y-1  duration-300 text-skin-navLinkText hover:text-skin-footerButtonText font-medium border-solid border-2 border-slate-200 rounded-lg py-3 px-12 text-xl hover:bg-white hover:border-[#FFFFFF] customCursor">
                                                         Contact Us
                                                     </button>
                                                 </div>
