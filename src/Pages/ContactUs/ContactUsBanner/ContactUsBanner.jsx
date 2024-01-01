@@ -8,7 +8,7 @@ const ContactUsBanner = () => {
                         <div>
                             <div className="pt-[230px] pb-[133px]">
                                 <h3 className="bannerTitleColor text-center text-4xl md:text-6xl font-bold mb-5">Contact With Us</h3>
-                                <p className="text-center text-skin-navLinkText px-5 md:text-xl">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                                {/* <p className="text-center text-skin-navLinkText px-5 md:text-xl">Contrary to popular belief, Lorem Ipsum is not simply random text.</p> */}
                             </div>
                         </div>
                     </div>

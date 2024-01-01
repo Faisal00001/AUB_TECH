@@ -1,23 +1,21 @@
-import { Link } from "react-router-dom";
-import Sponsorship from "../Sponsorship/Sponsorship";
 
 
 const LatestNews = () => {
     return (
         <div>
             <div className="container mx-auto mt-24">
-                <h3 className="pl-10 text-4xl md:text-6xl text-skin-Heading font-bold">Latest News</h3>
+                <h3 className="pl-10 text-4xl md:text-6xl text-skin-Heading font-bold">Testimonials</h3>
                 <div className="mt-6 pl-10 pr-10 flex flex-col lg:flex-row">
-                    <div className="flex-1">
+                    <div className="w-full md:w-[70%]">
                         <p className="text-skin-subHeading leading-7">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.
+                            AubTech transformed our business with its innovative solutions. The user-friendly interface and excellent support make it a standout choice. Highly recommended for powerful and efficient software solutions.
                         </p>
                     </div>
-                    <div className="flex-1 mt-6 flex lg:mt-0 justify-start md:justify-end">
+                    {/* <div className="flex-1 mt-6 flex lg:mt-0 justify-start md:justify-end">
                         <li className="list-none">
                             <Link className="link link-underline no-underline link-underline-black text-skin-Heading hover:text-skin-linkHover ">View All News</Link>
                         </li>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[100px] pl-10 pr-10 mb-10">
                     <div className="flex justify-center">
@@ -67,7 +65,7 @@ const LatestNews = () => {
                     </div>
                 </div>
                 {/* Sponsorship */}
-                <Sponsorship></Sponsorship>
+                {/* <Sponsorship></Sponsorship> */}
             </div>
         </div>
     );

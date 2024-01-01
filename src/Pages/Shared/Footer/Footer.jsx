@@ -6,13 +6,14 @@ import contactUs from "../../../assets/images/ContactUsBanner/contactUsBanner.jp
 import footerBannerImg from "../../../assets/images/HomeBanner/HomeBanner.jpg";
 const Footer = () => {
     const navigate = useNavigate()
-    const handleContact = () => {
+    const handlePath = (path) => {
         window.scrollTo({
             top: 0,
             behavior: 'auto'
         });
-        navigate('/contactUs')
+        navigate(`/${path}`)
     }
+
     return (
         <div>
             <div className="mt-56">
@@ -46,9 +47,9 @@ const Footer = () => {
                                         <div className="w-full pb-20 rounded-tr-md">
                                             <div className="container mx-auto">
                                                 <div className="pl-28 pt-28">
-                                                    <p className="text-skin-textWhite text-xl mb-5 pl-1">READY TO DO THIS</p>
-                                                    <h3 className="text-8xl font-bold text-skin-textWhite">Lets get <br />to work</h3>
-                                                    <button onClick={handleContact} className="transition mt-10 ease-in-out delay-150 hover:-translate-y-1  duration-300 text-skin-navLinkText hover:text-skin-footerButtonText font-medium border-solid border-2 border-slate-200 rounded-lg py-3 px-12 text-xl hover:bg-white hover:border-[#FFFFFF] customCursor">
+                                                    <p className="text-skin-textWhite text-xl mb-5 pl-1">Prepared to avail yourself of our top-tier offerings?</p>
+                                                    <h3 className="text-5xl font-bold text-skin-textWhite">Lets us <br />guide you to place your first order</h3>
+                                                    <button onClick={() => handlePath('contactUs')} className="transition mt-10 ease-in-out delay-150 hover:-translate-y-1  duration-300 text-skin-navLinkText hover:text-skin-footerButtonText font-medium border-solid border-2 border-slate-200 rounded-lg py-3 px-12 text-xl hover:bg-white hover:border-[#FFFFFF] customCursor">
                                                         Contact Us
                                                     </button>
                                                 </div>
@@ -61,8 +62,10 @@ const Footer = () => {
                                         <div>
                                             <h3 className="text-skin-footerText text-xl font-medium">Quick Link</h3>
                                             <div className="mt-4 md:mt-7 space-y-4">
-                                                <p className="text-skin-footerText hover:text-skin-footerButtonText customCursor font-medium">Work</p>
-                                                <p className="text-skin-footerText hover:text-skin-footerButtonText customCursor font-medium">About</p>
+                                                <p onClick={() => handlePath("service")} className="text-skin-footerText hover:text-skin-footerButtonText customCursor font-medium">Services</p>
+                                                <p onClick={() => handlePath('aboutUs')} className="text-skin-footerText hover:text-skin-footerButtonText customCursor font-medium">
+                                                    About
+                                                </p>
                                                 <p className="text-skin-footerText hover:text-skin-footerButtonText customCursor font-medium">Lets Talk</p>
 
                                             </div>
@@ -70,24 +73,24 @@ const Footer = () => {
                                         <div className="mt-10 md:mt-0">
                                             <h3 className="text-skin-footerText text-xl font-medium">Say Hello</h3>
                                             <div className="mt-4 md:mt-7 space-y-4">
-                                                <p className="text-skin-footerText hover:text-skin-footerButtonText customCursor font-medium">admin@example.com</p>
-                                                <p className="text-skin-footerText hover:text-skin-footerButtonText customCursor font-medium">hr@example.com</p>
+                                                <p className="text-skin-footerText hover:text-skin-footerButtonText customCursor font-medium">aubtechgroup@gmail.com</p>
+                                                <p className="text-skin-footerText hover:text-skin-footerButtonText customCursor font-medium">info.aubtech@gmail.com</p>
                                                 <div className="flex gap-6 ">
-                                                    <div><FaFacebookF className="text-skin-footerText text-lg customCursor transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:text-skin-footerButtonText duration-300"></FaFacebookF></div>
+                                                    <div> <a target="_blank" href="https://www.facebook.com/theaubtech" rel="noreferrer"><FaFacebookF className="text-skin-footerText text-lg customCursor transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:text-skin-footerButtonText duration-300"></FaFacebookF></a></div>
                                                     <div>
-                                                        <FaLinkedinIn className="text-skin-footerText text-lg customCursor transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:text-skin-footerButtonText duration-300"></FaLinkedinIn>
+                                                        <a target="_blank" href="https://www.linkedin.com/company/aubtechgroup" rel="noreferrer"> <FaLinkedinIn className="text-skin-footerText text-lg customCursor transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:text-skin-footerButtonText duration-300"></FaLinkedinIn></a>
                                                     </div>
                                                     <div>
-                                                        <FaInstagram className="text-skin-footerText text-lg customCursor transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:text-skin-footerButtonText duration-300"></FaInstagram>
+                                                        <a target="_blank" href="https://www.instagram.com/aubtechgroup" rel="noreferrer"><FaInstagram className="text-skin-footerText text-lg customCursor transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:text-skin-footerButtonText duration-300"></FaInstagram></a>
                                                     </div>
                                                     <div>
-                                                        <FaTwitter className="text-skin-footerText text-lg customCursor transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:text-skin-footerButtonText duration-300"></FaTwitter>
+                                                        <a target="_blank" href="https://twitter.com/AubTech27285?t=MBq_S752227a71XtqX8QxQ&s=07" rel="noreferrer"><FaTwitter className="text-skin-footerText text-lg customCursor transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:text-skin-footerButtonText duration-300"></FaTwitter></a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <p className="text-skin-footerText font-medium text-sm mt-12 text-center">Copyright © 2022 Rainbow-Themes. All Rights Reserved.</p>
+                                    <p className="text-skin-footerText font-medium text-sm mt-12 text-center">Copyright © 2023 AubTech. All Rights Reserved.</p>
                                 </div>
                             </div>
 

@@ -1,7 +1,7 @@
 import { FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../../assets/images/logo/logo.jpg";
+import logo from "../../../assets/images/logo/logo3.png";
 
 const Navbar = () => {
     const showBar = () => {
@@ -18,15 +18,19 @@ const Navbar = () => {
                 <nav className="absolute z-10 w-full">
                     <div className="container mx-auto">
                         <div className="flex justify-between   items-center">
-                            <div className="pl-16 pb-5 mt-[50px] flex items-center">
-                                <div className="avatar">
-                                    <div className="w-14 rounded-full">
+                            <div className="pl-16 pb-5 mt-[10px] flex items-center">
+                                {/* <div className="avatar">
+                                    <div className="w-full">
                                         <img src={logo} />
                                     </div>
+                                </div> */}
+                                <div className="w-[30%]">
+                                    <img src={logo} alt="" />
                                 </div>
-                                <h3 className="text-2xl md:text-3xl pl-3 text-white font-semibold">AUB TECH</h3>
+
+                                {/* <h3 className="text-2xl md:text-3xl pl-3 text-white font-semibold">AUB TECH</h3> */}
                             </div>
-                            <div className="pb-5 mt-[50px]">
+                            <div className="pb-5 mt-[30px]">
                                 <ul className="sidebar hidden backdrop-blur-sm bg-white/30 fixed  top-0 right-0 min-h-screen z-50  shadow-xl flex-col  items-start justify-start w-full md:w-[400px] ">
                                     <li className="w-full py-5">
                                         <div className="flex justify-end pr-5">

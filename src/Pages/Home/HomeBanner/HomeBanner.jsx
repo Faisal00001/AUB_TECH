@@ -1,7 +1,5 @@
 
-import { BiBriefcase } from "react-icons/bi";
-import { IoCubeOutline } from "react-icons/io5";
-import { LuMouse } from "react-icons/lu";
+import { Link } from "react-router-dom";
 import HomeBannerImg from "../../../assets/images/HomeBanner/HomeBanner.jpg";
 const HomeBanner = () => {
     return (
@@ -12,10 +10,15 @@ const HomeBanner = () => {
                     <div>
                         <div className="container mx-auto mb-[170px]">
                             <div className="pt-[230px] pl-[50px]">
-                                <h1 className="bg-gradient-to-r from-skin-BannerTitleStart to-skin-BannerTitleEnd text-transparent bg-clip-text mb-5 text-4xl md:text-6xl lg:text-8xl font-bold">A DIGITAL <br />
-                                    AGENCY.</h1>
+                                <h1 className="bg-gradient-to-r from-skin-BannerTitleStart to-skin-BannerTitleEnd text-transparent bg-clip-text mb-5 text-4xl  lg:text-6xl font-bold text-center pb-5 pr-5 ">Crafting Digital Futures  <br />with Code and Creativity</h1>
+                                <div className="flex justify-center">
+                                    <Link to={'/contactUs'} className="translation customCursor ease-in-out delay-150 duration-300  text-skin-navLinkText font-medium border-solid border-2 border-slate-200 rounded-lg py-3 px-7 hover:bg-skin-navButtonHover hover:border-[#f9004d]">
+                                        Hire Us
+                                    </Link>
+                                </div>
+
                             </div>
-                            <div className="pl-[50px] mt-10 gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pr-5">
+                            {/* <div className="pl-[50px] mt-10 gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pr-5">
                                 <div>
                                     <BiBriefcase className="text-skin-bannerIcon text-7xl mb-5"></BiBriefcase>
                                     <h3 className="text-skin-navLinkText text-xl md:text-2xl mb-5">Business Stratagy</h3>
@@ -33,7 +36,7 @@ const HomeBanner = () => {
                                     <h3 className="text-skin-navLinkText text-xl md:text-2xl mb-5">Marketing & Reporting</h3>
                                     <p className="text-skin-navSubHeading text-lg md:text-xl">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
 
                     </div>

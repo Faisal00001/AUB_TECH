@@ -5,7 +5,6 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaHeadphones } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
 import PageTitle from "../../components/PageTitle/PageTitle";
-import Sponsorship from "../../components/Sponsorship/Sponsorship";
 import ContactUsBanner from "./ContactUsBanner/ContactUsBanner";
 const ContactUs = () => {
     const form = useRef();
@@ -28,8 +27,8 @@ const ContactUs = () => {
                 <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 pt-36 px-8 md:px-14">
                     <div className="relative customCursor bg-skin-contactUsCardBg py-14 px-10 rounded-xl border-2 group border-gray-200">
                         <h3 className="text-lg font-bold">Contact With Phone Number</h3>
-                        <p className="mt-5 text-skin-subHeading mb-1 hover:text-[#f9004d]">+057 254 365 456</p>
-                        <p className="text-skin-subHeading hover:text-[#f9004d]">+856 325 652 984</p>
+                        <p className="mt-5 text-skin-subHeading mb-1 hover:text-[#f9004d]">+8801789833786</p>
+                        <p className="text-skin-subHeading hover:text-[#f9004d]">+8801567847246</p>
                         <div className="absolute transition duration-300 group-hover:delay-150 group-hover:bg-skin-navButtonHover flex justify-center items-center -translate-y-1/2 top-0 w-20 h-20 border-2 border-gray-200 rounded-full bg-skin-contactUsCardBg">
                             <FaHeadphones className="text-skin-count font-bold duration-300 transition group-hover:delay-150 group-hover:text-skin-textWhite text-3xl"></FaHeadphones>
                         </div>
@@ -38,8 +37,8 @@ const ContactUs = () => {
                     <div>
                         <div className="relative customCursor group bg-skin-contactUsCardBg py-14 px-10 rounded-xl border-2 border-gray-200">
                             <h3 className="text-lg font-bold">Email Address</h3>
-                            <p className="mt-5 text-skin-subHeading mb-1 hover:text-[#f9004d]">admin@gmail.com</p>
-                            <p className="text-skin-subHeading hover:text-[#f9004d]">example@gmail.com</p>
+                            <p className="mt-5 text-skin-subHeading mb-1 hover:text-[#f9004d]">aubtechgroup@gmail.com</p>
+                            <p className="text-skin-subHeading hover:text-[#f9004d]">info.aubtech@gmail.com</p>
                             <div className="absolute transition duration-300 group-hover:delay-150 group-hover:bg-skin-navButtonHover flex justify-center items-center -translate-y-1/2 top-0 w-20 h-20 border-2 border-gray-200 rounded-full bg-skin-contactUsCardBg">
                                 <MdOutlineMailOutline className="text-skin-count font-bold duration-300 transition group-hover:delay-150 group-hover:text-skin-textWhite text-3xl"></MdOutlineMailOutline>
                             </div>
@@ -48,8 +47,8 @@ const ContactUs = () => {
                     <div>
                         <div className="relative customCursor group bg-skin-contactUsCardBg py-14 px-10 rounded-xl border-2 border-gray-200">
                             <h3 className="text-lg font-bold">Location</h3>
-                            <p className="mt-5 text-skin-subHeading mb-1">5678 Bangla Main Road, cities 580</p>
-                            <p className="text-skin-subHeading">GBnagla, example 54786</p>
+                            <p className="mt-5 text-skin-subHeading mb-1">Road-6, Mohakhali DOHS, Mohakhali, Dhaka-1206</p>
+                            {/* <p className="text-skin-subHeading">GBnagla, example 54786</p> */}
                             <div className="absolute transition duration-300 group-hover:delay-150 group-hover:bg-skin-navButtonHover flex justify-center items-center -translate-y-1/2 top-0 w-20 h-20 border-2 border-gray-200 rounded-full bg-skin-contactUsCardBg">
                                 <FaMapMarkerAlt className="text-skin-count font-bold duration-300 transition group-hover:delay-150 group-hover:text-skin-textWhite text-3xl"></FaMapMarkerAlt>
                             </div>
@@ -61,8 +60,8 @@ const ContactUs = () => {
             <section className="mt-36">
                 <div className="flex flex-col-reverse lg:flex-row">
                     <div className="lg:flex-1 px-8 md:pl-14 mt-10">
-                        <h3 className="text-skin-Heading text-4xl md:text-6xl font-bold">Contact Us.</h3>
-                        <p className="text-skin-subHeading leading-7 mt-5 mb-12 md:w-[70%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cupiditate aperiam neque.</p>
+                        <h3 className="text-skin-Heading text-4xl md:text-6xl font-bold mb-12">Contact Us</h3>
+                        {/* <p className="text-skin-subHeading leading-7 mt-5 mb-12 md:w-[70%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cupiditate aperiam neque.</p> */}
                         <form ref={form} onSubmit={sendEmail} className="lg:w-[90%] md:pr-14 lg:pl-0">
                             <div className="mb-5">
                                 <input type="text" name='user_name' className="border-2 border-gray-200 px-4 py-3 w-full focus:border-[#f9004d] focus:outline-none rounded-md text-sm" placeholder="Your Name" />
@@ -72,7 +71,7 @@ const ContactUs = () => {
                                 <textarea name="message" id="" rows="4" className="border-2 border-gray-200 mt-5 px-4 py-3 w-full focus:border-[#f9004d] focus:outline-none rounded-md text-sm" placeholder="Your Message"></textarea>
                             </div>
                             <button className="transition  ease-in-out delay-150 hover:-translate-y-1 font-light duration-300 text-skin-textWhite hover:text-skin-footerButtonText  border-solid border-2 border-[#f9004d] rounded-lg py-2 md:py-3 md:px-8 px-4 lg:px-12 text-base  lg:text-lg hover:bg-white hover:border-[#f9004d] bg-[#f9004d] customCursor">
-                                Submit Now
+                                Submit
                             </button>
                         </form>
                     </div>
@@ -81,7 +80,7 @@ const ContactUs = () => {
                     </div>
                 </div>
             </section>
-            <Sponsorship></Sponsorship>
+            {/* <Sponsorship></Sponsorship> */}
         </div>
     );
 };

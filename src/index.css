@@ -12,6 +12,13 @@ body {
   cursor: url('../src/assets/images/cursor/aubtech.svg'), auto;
 }
 
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
 /* .cursor {
   width: 32px;
   height: 32px;

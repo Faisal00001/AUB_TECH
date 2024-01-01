@@ -1,5 +1,6 @@
-import { AiOutlineDesktop } from "react-icons/ai";
 import { FaBusinessTime } from "react-icons/fa6";
+import { GrSystem } from "react-icons/gr";
+import { MdMiscellaneousServices } from "react-icons/md";
 import { SiGamedeveloper } from "react-icons/si";
 import { TbUserBolt } from "react-icons/tb";
 import { Link } from "react-router-dom";
@@ -23,24 +24,31 @@ const Services = () => {
                         <div className="w-full lg:w-[67%] gap-2 grid grid-cols-1 md:grid-cols-2">
                             <div className="space-y-4 hover:bg-gradient-to-r from-[#f61b10] to-[#ef0963] group  p-8 w-[90%] hover:rounded-lg transition duration-700 ease-in-out delay-150 hover:-translate-y-3 customCursor">
                                 <FaBusinessTime className="text-skin-linkHover text-6xl group-hover:text-white"></FaBusinessTime>
-                                <h3 className="text-skin-Heading text-lg group-hover:text-white">Business Stratagy</h3>
-                                <p className="text-skin-subHeading group-hover:text-white">I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
+                                <h3 className="text-skin-Heading text-lg group-hover:text-white">Project Development</h3>
+                                <p className="text-skin-subHeading group-hover:text-white">Craft tailored solutions with AubTech's project development expertise. Our dynamic team ensures seamless execution, delivering success for your unique vision.</p>
                             </div>
                             <div className="space-y-4 hover:bg-gradient-to-r from-[#f61b10] to-[#ef0963] group  p-8 w-[90%] hover:rounded-lg transition duration-700 ease-in-out delay-150 hover:-translate-y-3 customCursor">
                                 <SiGamedeveloper className="text-skin-linkHover text-6xl group-hover:text-white"></SiGamedeveloper>
-                                <h3 className="text-skin-Heading text-lg group-hover:text-white">Website Development</h3>
-                                <p className=" text-skin-subHeading group-hover:text-white">I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
+                                <h3 className="text-skin-Heading text-lg group-hover:text-white">Offshore Development</h3>
+                                <p className=" text-skin-subHeading group-hover:text-white">Optimize costs and amplify efficiency with AubTech's offshore development services. Our global team ensures top-notch solutions, fostering success in the digital landscap.</p>
                             </div>
                             <div className="space-y-4 hover:bg-gradient-to-r from-[#f61b10] to-[#ef0963] group  p-8 w-[90%] hover:rounded-lg transition duration-700 ease-in-out delay-150 hover:-translate-y-3 customCursor">
                                 <TbUserBolt className="text-skin-linkHover text-6xl group-hover:text-white"></TbUserBolt>
-                                <h3 className="text-skin-Heading text-lg group-hover:text-white">Marketing & Reporting</h3>
-                                <p className="text-skin-subHeading group-hover:text-white">I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
+                                <h3 className="text-skin-Heading text-lg group-hover:text-white">Software Maintenance & IT Support</h3>
+                                <p className="text-skin-subHeading group-hover:text-white">Experience uninterrupted performance with AubTech's software maintenance and IT support. Our dedicated team ensures the reliability and efficiency of your software systems.</p>
                             </div>
-                            <div className="pace-y-4 hover:bg-gradient-to-r from-[#f61b10] to-[#ef0963] group  p-8 w-[90%]  hover:rounded-lg transition duration-700 ease-in-out delay-150 hover:-translate-y-3 customCursor">
-                                <AiOutlineDesktop className="text-skin-linkHover text-6xl group-hover:text-white"></AiOutlineDesktop>
-                                <h3 className="text-skin-Heading text-lg group-hover:text-white">Mobile App Development</h3>
-                                <p className="text-skin-subHeading group-hover:text-white">I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
+                            <div className="space-y-4 hover:bg-gradient-to-r from-[#f61b10] to-[#ef0963] group  p-8 w-[90%] hover:rounded-lg transition duration-700 ease-in-out delay-150 hover:-translate-y-3 customCursor">
+                                <MdMiscellaneousServices className="text-skin-linkHover text-6xl group-hover:text-white"></MdMiscellaneousServices>
+                                <h3 className="text-skin-Heading text-lg group-hover:text-white">MVP Service</h3>
+                                <p className="text-skin-subHeading group-hover:text-white">Validate your ideas swiftly with AubTech's MVP services. Our agile approach brings your Minimum Viable Product to market quickly, minimizing risks and maximizing impact.</p>
                             </div>
+                            <div className="space-y-4 hover:bg-gradient-to-r from-[#f61b10] to-[#ef0963] group  p-8 w-[90%] hover:rounded-lg transition duration-700 ease-in-out delay-150 hover:-translate-y-3 customCursor">
+                                <GrSystem className="text-skin-linkHover text-6xl group-hover:text-white"></GrSystem>
+                                <h3 className="text-skin-Heading text-lg group-hover:text-white">Scalable System Design</h3>
+                                <p className="text-skin-subHeading group-hover:text-white">Future-proof your infrastructure with AubTech's scalable system design. Our solutions evolve with your business, ensuring flexibility and efficiency in an ever-changing digital environment.</p>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
