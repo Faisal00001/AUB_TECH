@@ -15,7 +15,7 @@ const OurFunFacts = () => {
         <div>
             <div className="container mx-auto">
                 <div>
-                    <h3 className="text-3xl text-skin-Heading font-medium md:text-4xl text-center">Our Milestones</h3>
+                    <h3 className="text-4xl md:text-6xl font-bold text-skin-Heading text-center">Our Milestones</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 pl-10 pr-10 md:pl-16 md:pr-16 mt-16">
                         <div className="text-center">
                             <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
@@ -76,7 +76,7 @@ const OurFunFacts = () => {
             </div>
             <div className='mt-20'>
                 <div className='bg-skin-fillServicesBg py-24'>
-                    <h3 className='text-skin-Heading hidden lg:block text-center font-medium  lineGap w-[75%] text-xl md:text-3xl lg:text-4xl mx-auto'>Our Team</h3>
+                    <h3 className='text-skin-Heading hidden lg:block text-center  lineGap w-[75%] text-4xl md:text-6xl mx-auto font-bold'>Our Team</h3>
                     <h3 className='text-skin-Heading block lg:hidden text-center font-medium leading-10 w-[75%] text-xl md:text-3xl mx-auto'>Our Team</h3>
                     <p className='mt-10 text-center'>
                         {/* <span className='text-skin-Heading md:text-lg'>AubTech</span>  */}

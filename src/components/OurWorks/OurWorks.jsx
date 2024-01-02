@@ -11,7 +11,7 @@ const OurWorks = () => {
         <div>
             <div className="container mt-24 mx-auto pb-20">
                 <div className="pl-8 space-y-7">
-                    <h3 className="text-4xl md:text-6xl text-skin-Heading font-bold">Our Clients</h3>
+                    <h3 className="text-4xl md:text-6xl text-skin-Heading font-bold text-center">Our Clients</h3>
                     {/* <p className="text-skin-subHeading  leading-7">There are many variations of passages of Lorem Ipsum available, <br /> but the majority have suffered alteration.</p> */}
                 </div>
             </div>

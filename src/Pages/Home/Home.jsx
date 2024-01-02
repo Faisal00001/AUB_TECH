@@ -1,6 +1,5 @@
 
 import AboutUs from "../../components/AboutUs/AboutUs";
-import LatestNews from "../../components/LatestNews/LatestNews";
 import OurFunFacts from "../../components/OurFunFacts/OurFunFacts";
 import OurWorks from "../../components/OurWorks/OurWorks";
 import PageTitle from "../../components/PageTitle/PageTitle";
@@ -17,7 +16,7 @@ const Home = () => {
             <Services></Services>
             <OurWorks></OurWorks>
             <OurFunFacts></OurFunFacts>
-            <LatestNews></LatestNews>
+            {/* <LatestNews></LatestNews> */}
 
         </div>
     );

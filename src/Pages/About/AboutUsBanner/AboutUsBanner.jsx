@@ -1,10 +1,11 @@
-import HomeBannerImg from "../../../assets/images/HomeBanner/HomeBanner.jpg";
+import Particle from "../../../components/Particle/Particle";
 import "./AboutUsBanner.css";
 const AboutUsBanner = () => {
     return (
         <div>
             <div>
-                <div className="hero min-h-[50vh]" style={{ backgroundImage: `url(${HomeBannerImg})` }}>
+                <div className="hero bg-black">
+                    <Particle></Particle>
                     <div>
                         <div className="container mx-auto">
                             <div>

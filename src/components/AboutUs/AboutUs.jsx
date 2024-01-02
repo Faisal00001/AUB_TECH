@@ -3,9 +3,9 @@ import mountain from "../../assets/images/navImages/mountain.jpg";
 const AboutUs = () => {
     return (
         <div className="container mx-auto">
-            <div className="flex flex-col lg:flex-row items-center gap-5 my-24 lg:mt-0 ">
+            <div className="flex flex-col lg:flex-row items-center gap-5 my-24">
                 <div className="w-full lg:w-[45%]">
-                    <img src={mountain} className="h-[550px] object-cover lg:h-[600px] lg:-mt-20 mx-auto  w-[80%] rounded-lg" alt="Mountain" />
+                    <img src={mountain} className="h-[550px] object-cover lg:h-[600px] mx-auto  w-[80%] rounded-lg" alt="Mountain" />
                 </div>
                 <div className="w-[80%] lg:w-[55%]">
                     <div className="space-y-5 md:pr-10 mt-16 lg:mt-0">

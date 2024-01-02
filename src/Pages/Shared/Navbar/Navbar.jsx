@@ -24,18 +24,21 @@ const Navbar = () => {
                                         <img src={logo} />
                                     </div>
                                 </div> */}
-                                <div className="w-[30%]">
-                                    <img src={logo} alt="" />
-                                </div>
+                                <Link className="customCursor" to={'/'}>
+                                    <div className="w-[70%] md:w-[30%]">
+                                        <img src={logo} alt="" />
+                                    </div>
+                                </Link>
+
 
                                 {/* <h3 className="text-2xl md:text-3xl pl-3 text-white font-semibold">AUB TECH</h3> */}
                             </div>
-                            <div className="pb-5 mt-[30px]">
-                                <ul className="sidebar hidden backdrop-blur-sm bg-white/30 fixed  top-0 right-0 min-h-screen z-50  shadow-xl flex-col  items-start justify-start w-full md:w-[400px] ">
+                            <div className="pb-5 mt-[20px]">
+                                <ul className="sidebar hidden backdrop-blur-sm bg-white/30 fixed  top-0 right-0 min-h-screen z-50  shadow-xl flex-col  items-start justify-start w-full md:w-[400px]">
                                     <li className="w-full py-5">
                                         <div className="flex justify-end pr-5">
-                                            <div>
-                                                <IoMdClose onClick={hideSideBar} className="ml-5 text-3xl cursor-pointer" />
+                                            <div className="customCursor">
+                                                <IoMdClose onClick={hideSideBar} className="ml-5 text-3xl" />
                                             </div>
                                         </div>
                                     </li>
@@ -59,11 +62,11 @@ const Navbar = () => {
                                                     isPending ? "pending" : isActive ? "active" : ""
                                                 }
                                             >
-                                                Service
+                                                <span className="customCursor">Service</span>
                                             </NavLink>
                                         </Link>
                                     </li>
-                                    <li className="w-full  pb-5">
+                                    {/* <li className="w-full  pb-5">
                                         <Link className="pl-10 font-semibold">
                                             <NavLink
                                                 to="/serviceDetails"
@@ -74,7 +77,7 @@ const Navbar = () => {
                                                 Service Details
                                             </NavLink>
                                         </Link>
-                                    </li>
+                                    </li> */}
                                     <li className="w-full  pb-5">
                                         <Link className="pl-10 font-semibold">
                                             <NavLink
@@ -83,7 +86,7 @@ const Navbar = () => {
                                                     isPending ? "pending" : isActive ? "active" : ""
                                                 }
                                             >
-                                                About
+                                                <span className="customCursor">About</span>
                                             </NavLink>
                                         </Link>
                                     </li>
@@ -95,7 +98,7 @@ const Navbar = () => {
                                                     isPending ? "pending" : isActive ? "active" : ""
                                                 }
                                             >
-                                                Contact
+                                                <span className="customCursor">Contact</span>
                                             </NavLink>
                                         </Link>
                                     </li>
@@ -117,8 +120,11 @@ const Navbar = () => {
                                     <li className="hidden lg:block">
 
                                         <div className="dropdown dropdown-hover">
-                                            <label tabIndex={0} className=" text-skin-navLinkText font-medium hover:text-skin-navLinkTextHover customCursor">Service</label>
-                                            <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 px-2 shadow bg-base-100 space-y-4 rounded-lg py-5 w-60">
+                                            <Link to={'/service'}>
+                                                <label tabIndex={0} className=" text-skin-navLinkText font-medium hover:text-skin-navLinkTextHover customCursor">Service</label>
+                                            </Link>
+
+                                            {/* <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 px-2 shadow bg-base-100 space-y-4 rounded-lg py-5 w-60">
                                                 <Link to={'/service'} className="font-medium hover:text-skin-navLinkTextHover px-5 py-2 hover:bg-red-100 hover:rounded-sm customCursor">
                                                     <NavLink
                                                         to={'/service'}
@@ -141,7 +147,7 @@ const Navbar = () => {
 
                                                     </NavLink>
                                                 </Link>
-                                            </ul>
+                                            </ul> */}
                                         </div>
 
                                     </li>
