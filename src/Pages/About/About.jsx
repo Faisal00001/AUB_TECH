@@ -1,7 +1,9 @@
+import Lottie from "lottie-react";
 import { useState } from 'react';
 import CountUp from 'react-countup';
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import ScrollTrigger from 'react-scroll-trigger';
+import AboutUsAnimation from "../../assets/images/About/AnimationAubTech.json";
 import arman from "../../assets/images/Our Teams/arman.jpg";
 import arnab from "../../assets/images/Our Teams/arnab.jpg";
 import ashik from "../../assets/images/Our Teams/ashik.jpg";
@@ -20,8 +22,9 @@ const About = () => {
                 <AboutUsBanner></AboutUsBanner>
                 <div className="container mx-auto">
                     <div className="flex flex-col lg:flex-row items-center gap-5 my-24">
-                        <div className="w-full lg:w-[45%]">
-                            <img src="https://i.ibb.co/HV6jz9R/maxime-9kf6-TF2fack-unsplash.jpg" className="h-[550px] object-cover lg:h-[600px]  mx-auto ml-12 w-[80%] rounded-lg" alt="About Us" />
+                        <div className="w-full lg:w-[45%] px-8">
+                            {/* <img src={AubTechAboutUs} className="h-[550px] object-cover lg:h-[600px]  mx-auto ml-12 w-[80%] rounded-lg" alt="About Us" /> */}
+                            <Lottie animationData={AboutUsAnimation} loop={true} />
                         </div>
                         <div className="w-[80%] lg:w-[55%]">
                             <div className="space-y-5 md:pr-10 mt-16 lg:mt-0">

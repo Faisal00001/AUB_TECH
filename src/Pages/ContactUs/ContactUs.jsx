@@ -35,9 +35,9 @@ const ContactUs = () => {
 
                     </div>
                     <div>
-                        <div className="relative customCursor group bg-skin-contactUsCardBg py-14 px-10 rounded-xl border-2 border-gray-200">
+                        <div className="relative customCursor group bg-skin-contactUsCardBg py-20 px-10 rounded-xl border-2 border-gray-200">
                             <h3 className="text-lg font-bold">Email Address</h3>
-                            <p className="mt-5 text-skin-subHeading mb-1 hover:text-[#f9004d]">aubtechgroup@gmail.com</p>
+                            {/* <p className="mt-5 text-skin-subHeading mb-1 hover:text-[#f9004d]">aubtechgroup@gmail.com</p> */}
                             <p className="text-skin-subHeading hover:text-[#f9004d]">info.aubtech@gmail.com</p>
                             <div className="absolute transition duration-300 group-hover:delay-150 group-hover:bg-skin-navButtonHover flex justify-center items-center -translate-y-1/2 top-0 w-20 h-20 border-2 border-gray-200 rounded-full bg-skin-contactUsCardBg">
                                 <MdOutlineMailOutline className="text-skin-count font-bold duration-300 transition group-hover:delay-150 group-hover:text-skin-textWhite text-3xl"></MdOutlineMailOutline>

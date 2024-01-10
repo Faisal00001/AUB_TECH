@@ -37,7 +37,7 @@ const OurWorks = () => {
                     <div className='flex justify-center px-2 customCursor'>
                         <div className='relative group transition ease-in-out delay-150 hover:scale-110  duration-300 '>
                             <img
-                                className='h-[500px] filter brightness-75 rounded-md object-cover group-hover:brightness-100'
+                                className='h-[500px] filter brightness-95 rounded-md object-cover group-hover:brightness-100'
                                 src={edufusion}
                                 alt="Edufusion"
                             />
@@ -54,7 +54,7 @@ const OurWorks = () => {
                     <div className='flex justify-center px-2 customCursor'>
                         <div className='relative group transition ease-in-out delay-150 hover:scale-110  duration-300'>
                             <img
-                                className='h-[500px] filter brightness-75 rounded-md object-cover group-hover:brightness-100'
+                                className='h-[500px] filter brightness-95 rounded-md object-cover group-hover:brightness-100'
                                 src={craze}
                                 alt="Craze"
                             />
@@ -71,7 +71,7 @@ const OurWorks = () => {
                     <div className='flex justify-center px-2 customCursor'>
                         <div className='relative group transition ease-in-out delay-150 hover:scale-110  duration-300'>
                             <img
-                                className='h-[500px] filter brightness-75 rounded-md object-cover group-hover:brightness-100'
+                                className='h-[500px] filter brightness-95 rounded-md object-cover group-hover:brightness-100'
                                 src={diamond}
                                 alt="Diamond"
                             />
@@ -89,7 +89,7 @@ const OurWorks = () => {
                     <div className='flex justify-center px-2 customCursor'>
                         <div className='relative group transition ease-in-out delay-150 hover:scale-110  duration-300'>
                             <img
-                                className='h-[500px] object-cover filter brightness-75 rounded-md group-hover:brightness-100'
+                                className='h-[500px] object-cover filter brightness-95 rounded-md group-hover:brightness-100'
                                 src={aliceSprings}
                                 alt="AliceSprings"
                             />

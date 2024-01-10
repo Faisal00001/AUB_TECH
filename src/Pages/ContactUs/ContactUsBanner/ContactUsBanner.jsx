@@ -5,7 +5,7 @@ const ContactUsBanner = () => {
         <div>
             <div>
                 <div className="hero bg-black">
-                    <Particle></Particle>
+                    <Particle viewPort={'h-[450px]'}></Particle>
                     <div className="container mx-auto">
                         <div>
 

@@ -6,15 +6,15 @@ const HomeBanner = () => {
         <div>
             <div>
                 {/* <img src="" alt="" /> */}
-                <div className="hero min-h-screen bg-black">
-                    <Particle></Particle>
+                <div className="hero bg-black">
+                    <Particle viewPort={'h-screen'}></Particle>
                     <div>
                         <div className="container mx-auto mb-[170px]">
                             <div className="pt-[230px] px-1">
-                                <h1 className="bg-gradient-to-r from-skin-BannerTitleStart to-skin-BannerTitleEnd text-transparent bg-clip-text mb-5 text-3xl  lg:text-6xl font-bold text-center pb-5 pr-5 ">Crafting Digital Futures  <br />with Code and Creativity</h1>
+                                <h1 className="bannerTitleColor mb-5 text-3xl  lg:text-6xl font-bold text-center pb-5 pr-5 ">Crafting Digital Futures  <br />with Code and Creativity</h1>
                                 <div className="flex justify-center">
-                                    <Link to={'/contactUs'} className="translation bg-skin-navButtonHover customCursor ease-in-out delay-150 duration-300  text-skin-navLinkText font-medium border-solid border-2 border-slate-200 rounded-lg py-3 px-7 hover:bg-skin-navButtonHover hover:border-[#f9004d]">
-                                        Hire Us
+                                    <Link to={'/contactUs'} className="translation customCursor ease-in-out delay-150 duration-300  text-skin-navLinkText font-medium border-solid border-2 border-slate-200 rounded-lg py-3 px-7 hover:bg-skin-navButtonHover hover:border-[#f9004d]">
+                                        Contact Us
                                     </Link>
                                 </div>
 

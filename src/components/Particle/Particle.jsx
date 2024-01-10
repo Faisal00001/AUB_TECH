@@ -1,7 +1,8 @@
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
+import PropTypes from 'prop-types';
 import { useEffect, useMemo, useState } from "react";
-const Particle = () => {
+const Particle = ({ viewPort }) => {
     const [init, setInit] = useState(false);
 
     // this should be run only once per application lifetime
@@ -78,7 +79,7 @@ const Particle = () => {
                     density: {
                         enable: true,
                     },
-                    value: 250,
+                    value: 300,
                 },
                 opacity: {
                     value: 0.5,
@@ -101,7 +102,7 @@ const Particle = () => {
                 id="tsparticles"
                 particlesLoaded={particlesLoaded}
                 options={options}
-                className="w-full h-screen"
+                className={`w-full ${viewPort}`}
             />
         );
     }
@@ -111,5 +112,7 @@ const Particle = () => {
         </div>
     );
 };
-
+Particle.propTypes = {
+    viewPort: PropTypes.string.isRequired
+}
 export default Particle;

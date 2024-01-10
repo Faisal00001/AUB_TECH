@@ -27,7 +27,7 @@ const Footer = () => {
                                         <div className="pl-8 md:pl-16">
                                             <p className="text-skin-textWhite text-sm md:text-lg lg:text-xl mb-5 pl-1">READY TO DO THIS</p>
                                             <h3 className="text-5xl md:text-6xl lg:text-8xl font-bold text-skin-textWhite">Lets get <br />to work</h3>
-                                            <button className="transition mt-7 md:mt-10 ease-in-out delay-150 hover:-translate-y-1  duration-300 text-skin-navLinkText hover:text-skin-footerButtonText font-medium border-solid border-2 border-slate-200 rounded-lg py-2 md:py-3 md:px-8 px-4 lg:px-12 text-lg  lg:text-xl hover:bg-white hover:border-[#FFFFFF]">
+                                            <button onClick={() => handlePath('contactUs')} className="transition mt-7 md:mt-10 ease-in-out delay-150 hover:-translate-y-1  duration-300 text-skin-navLinkText hover:text-skin-footerButtonText font-medium border-solid border-2 border-slate-200 rounded-lg py-2 md:py-3 md:px-8 px-4 lg:px-12 text-lg  lg:text-xl hover:bg-white hover:border-[#FFFFFF]">
                                                 Contact Us
                                             </button>
                                         </div>
@@ -66,8 +66,9 @@ const Footer = () => {
                                                 <p onClick={() => handlePath('aboutUs')} className="text-skin-footerText hover:text-skin-footerButtonText customCursor font-medium">
                                                     About
                                                 </p>
-                                                <p className="text-skin-footerText hover:text-skin-footerButtonText customCursor font-medium">Lets Talk</p>
-
+                                                <div>
+                                                    <a href="mailto:info.aubtech@gmail.com" className="text-skin-footerText hover:text-skin-footerButtonText customCursor font-medium">Lets Talk</a>
+                                                </div>
                                             </div>
                                         </div>
                                         <div className="mt-10 md:mt-0">
